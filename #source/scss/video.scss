@@ -11,6 +11,8 @@
     font-size: 18px;
     margin: 18px 0 13px 0;
     font-weight: 500;
+
+    color: #F1F1F1;
   }
 
   .video__channel_reaction {
@@ -28,6 +30,8 @@
         margin: 0 10px 0 10px;
 
         font-size: 14px;
+
+        color: #F1F1F1;
 
         .video__channel_title {
           display: flex;
@@ -79,6 +83,8 @@
       font-weight: 400;
       margin-bottom: 4px;
 
+      .video__description_views,
+
       .video__description_author {
         color: #AAAAAA;
       }
@@ -104,6 +110,7 @@
       align-items: center;
 
       .video__comments_count {
+        color: #F1F1F1;
         margin: 0 20px 0 0;
       }
 
@@ -116,6 +123,10 @@
         align-items: center;
 
         font-size: 14px;
+
+        &>span {
+          color: #F1F1F1;
+        }
 
         &>img {
           margin-right: 7px;
@@ -160,6 +171,7 @@
     .video__comments {
       display: flex;
       flex-direction: column;
+      color: #F1F1F1;
 
       .video__comment_container {
         margin: 10px 0 10px 0;
@@ -202,6 +214,8 @@
             border: none;
 
             cursor: pointer;
+
+            color: #F1F1F1;
 
             &>img {
               margin-right: 4px;

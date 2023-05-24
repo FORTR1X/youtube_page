@@ -65,6 +65,7 @@ $navbar_height: 56;
 body {
   font-family: 'Roboto', sans-serif;
   font-size: 10px;
+  background-color: #121212;
   
   .home__wrapper {
     @import "navbar.scss";
