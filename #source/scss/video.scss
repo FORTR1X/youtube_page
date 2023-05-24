@@ -1,0 +1,238 @@
+.video__wrapper {
+  width: 70%;
+  margin-right: 30px;
+
+  .video__player {
+    border: none;
+    outline: none;
+  }
+
+  .video__title {
+    font-size: 18px;
+    margin: 18px 0 13px 0;
+    font-weight: 500;
+  }
+
+  .video__channel_reaction {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    .video__channel {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+
+      .video__channel_title_subs {
+        margin: 0 10px 0 10px;
+
+        font-size: 14px;
+
+        .video__channel_title {
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+
+          margin: 0 0 4px 0;
+
+          &>img {
+            margin: 0 0 0 7px;
+          }
+        }
+
+        .video__channel_subs {
+          color: #848484;
+          font-weight: 300;
+          font-size: 12px;
+        }
+      }
+    }
+
+    .video__reaction {
+      width: 385px;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+
+      .video__reaction_like_dislike_btns {
+        display: flex;
+        flex-direction: row;
+
+        position: relative;
+      }
+
+    }
+  }
+
+  .video__description_container {
+    margin-top: 14px;
+    background-color: #272727;
+    color: #F1F1F1;
+    border-radius: 16px;
+    padding: 15px;
+
+    font-size: 14px;
+
+    .video__description_info {
+      font-weight: 400;
+      margin-bottom: 4px;
+
+      .video__description_author {
+        color: #AAAAAA;
+      }
+
+      &>span:not(:last-child) {
+        margin-right: 5px;
+      }
+    }
+
+    .video__description {
+      font-size: 13.2px;
+      line-height: 1.2em;
+    }
+  }
+
+  .video__comments_container {
+    .video__comments_count_sort {
+      margin: 20px 0 15px 0;
+      font-size: 16px;
+
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+
+      .video__comments_count {
+        margin: 0 20px 0 0;
+      }
+
+      .video__comments_sort {
+        background-color: transparent;
+        border: none;
+        
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+
+        font-size: 14px;
+
+        &>img {
+          margin-right: 7px;
+        }
+      }
+    }
+
+    .video__comments_send {
+      display: flex;
+      flex-direction: row;
+      margin-bottom: 20px;
+
+      width: 100%;
+      
+      &>img {
+        margin-right: 15px;
+      }
+
+      .video__comments_text_field {
+        display: flex;
+        flex: 1;
+
+        margin-right: 10px;
+      
+        height: 35px;
+        padding: 10px 10px 10px 0;
+
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 1.2em;
+
+        border: none;
+        background-color: transparent;
+        border-bottom: 1px solid #525252;
+      
+        &:focus {
+          outline: none;
+        }
+      }
+    }
+
+    .video__comments {
+      display: flex;
+      flex-direction: column;
+
+      .video__comment_container {
+        margin: 10px 0 10px 0;
+
+        display: flex;
+        flex-direction: row;
+
+        font-size: 14px;
+
+        padding-right: 10px;
+
+        .video__comment_info {
+          .video__comment_username {
+            margin-right: 7px;
+          }
+
+          .video__comment_date_publish {
+            color: #AAAAAA;
+            font-weight: 300;
+            font-size: 12px;
+          }
+        }
+
+        .video__comment_text_container {
+          margin: 10px 0 10px 0;
+        }
+
+        .video__comment_actions {
+          display: flex;
+          flex-direction: row;
+
+          margin-bottom: 14px;
+
+          &>button {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+
+            background-color: transparent;
+            border: none;
+
+            cursor: pointer;
+
+            &>img {
+              margin-right: 4px;
+            }
+          }
+
+          &>button:not(:last-child) {
+            margin-right: 16px;
+          }
+        }
+
+        .video__comments_replys {
+          margin-left: 7px;
+
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+
+          color: #3EA6FF;
+
+          font-weight: 600;
+
+          &>img {
+            margin-right: 12px;
+          }
+        }
+
+        &>img {
+          margin-right: 10px;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,135 @@
+.navbar__wrapper {
+  position: fixed;
+  z-index: 10;
+
+  height: $navbar_height + 0px;
+  width: 100%;
+  background-color: $base_bg_color_dark;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+  .navbar__container {
+    width: 97%;
+    margin: 0 auto;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+    .navbar__burger_logo_container {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+
+      .navbar__burger {
+        width: 40px;
+        height: 40px;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        border: none;
+        background-color: transparent;
+      }
+    }
+
+    .navbar__search_container {
+      flex: 0 1 644px;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+
+      .navbar__search {
+        display: flex;
+        flex: 1;
+
+        position: relative;
+
+        width: 100%;
+        border-radius: 40px;
+
+        .navbar__search_field {
+          font-size: 16px;
+
+          display: flex;
+          flex: 1;
+
+          height: 40px;
+          border-radius: 40px 0 0 40px;
+          background-color: $base_bg_color_dark;
+          border: 1px solid $base_outline_color_dark;
+
+          padding: 0 55px 0 20px;
+
+          &:focus {
+            outline: none;
+          }
+        }
+
+        .navbar__search_tia {
+          position: absolute;
+          right: 15px;
+          top: 15px;
+
+          background-color: transparent;
+          outline: none;
+          border: none;
+        }
+      }
+
+      .navbar__search_btn {
+        width: 64px;
+        height: 40px;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        border: 1px solid $base_outline_color_dark;
+        border-radius: 0 40px 40px 0;
+
+        background-color: #222222;
+      }
+
+      .navbar__search_voice {
+        width: 40px;
+        height: 40px;
+
+        border-radius: 100%;
+
+        background-color: #181818;
+        outline: none;
+        border: none;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        margin: 0 0 0 7px;
+      }
+    }
+
+    .navbar__buttons_container {
+      min-width: 125px;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+
+      .navbar_buttons_btn {
+
+        background-color: transparent;
+        border: none;
+
+        &>a {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+      }
+    }
+  }
+}

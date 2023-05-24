@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+
+$base_bg_color_dark: #0F0F0F;
+$base_outline_color_dark: #303030;
+$navbar_height: 56;
+
+.button {
+  font-family: 'Roboto', sans-serif;
+  cursor: pointer;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+  font-weight: 600;
+  font-size: 14px;
+
+  border-radius: 18px;
+  padding: 0 16px;
+  height: 36px;
+
+  border: none;
+  outline: none;
+  
+  &>img {
+    margin-right: 7px;
+  }
+
+  &>span {
+    margin-top: 2px;
+  }
+
+  &.light {
+    background-color: #F1F1F1;
+    color: #0F0F0F;
+  }
+
+  &.dark {
+    background-color: #252728;
+    color: #F1F1F1;
+  }
+
+  &.left {
+    position: relative;
+    border-radius: 18px 0 0 18px;
+
+    &::before {
+      content: '';
+      
+      width: 1px;
+      height: 24px;
+
+      background-color: #525252;
+
+      position: absolute;
+
+      right: 0;
+    }
+  }
+  &.right {
+    border-radius: 0 18px 18px 0;
+  }
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  font-size: 10px;
+  
+  .home__wrapper {
+    @import "navbar.scss";
+
+    .home__main_content {
+      padding: $navbar_height + 20px 25px 0 25px;
+
+      display: flex;
+      flex-direction: row;
+
+      @import "video.scss";
+
+      @import "recommend.scss";
+    }
+  }
+}
